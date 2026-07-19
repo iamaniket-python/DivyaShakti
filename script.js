@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const mainNav = document.getElementById('mainNav');
   hamburger.addEventListener('click', () => {
     const isOpen = mainNav.classList.toggle('open');
+    hamburger.classList.toggle('active', isOpen);
     hamburger.setAttribute('aria-expanded', String(isOpen));
   });
   mainNav.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       mainNav.classList.remove('open');
+      hamburger.classList.remove('active');
       hamburger.setAttribute('aria-expanded', 'false');
     });
   });
@@ -33,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const clickedHamburger = hamburger.contains(e.target);
     if (isOpen && !clickedInsideNav && !clickedHamburger) {
       mainNav.classList.remove('open');
+      hamburger.classList.remove('active');
       hamburger.setAttribute('aria-expanded', 'false');
     }
   });
@@ -41,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && mainNav.classList.contains('open')) {
       mainNav.classList.remove('open');
+      hamburger.classList.remove('active');
       hamburger.setAttribute('aria-expanded', 'false');
     }
   });
