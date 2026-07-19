@@ -26,6 +26,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Close the mobile menu when clicking anywhere outside it
+  document.addEventListener('click', (e) => {
+    const isOpen = mainNav.classList.contains('open');
+    const clickedInsideNav = mainNav.contains(e.target);
+    const clickedHamburger = hamburger.contains(e.target);
+    if (isOpen && !clickedInsideNav && !clickedHamburger) {
+      mainNav.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Close the mobile menu on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+      mainNav.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
   /* ---------- Hero video: graceful fallback ---------- */
   // If the background video fails to load (e.g. src not reachable),
   // swap to the CSS flame-particle field so the header still feels alive.
