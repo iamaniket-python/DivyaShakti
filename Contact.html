@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sampark Karein | Divya Shakti Darbar</title>
+<meta name="description" content="Divya Shakti Darbar se sampark karein — phone, email, pata aur live aarti smaran ke liye.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="emberCanvas"></canvas>
+
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">Darbar Ke Baare Mein</a>
+      <a href="sevayein.html">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active-link">Sampark</a>
+      <a href="booking.html" class="nav-cta">Puja Book Karein</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu kholein" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="hero-fallback" aria-hidden="true">
+    <div class="flame-field" id="flameField"></div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="page-hero-content">
+    <p class="eyebrow">संपर्क करें</p>
+    <h1>Darbar Se Judein</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Sampark</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT INFO + FORM ============ -->
+<section class="contact-section">
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <p class="eyebrow eyebrow-dark">संपर्क विवरण</p>
+      <h2>Hum Sunne Ke Liye Yahan Hain</h2>
+      <p>Kisi bhi seva, sankalp ya prashn ke liye neeche diye gaye madhyamon se sampark karein — hamare acharya jald hi uttar denge.</p>
+
+      <ul class="contact-cards">
+        <li class="contact-card">
+          <span class="cc-icon">📞</span>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:+910000000000">+91 00000 00000</a>
+          </div>
+        </li>
+        <li class="contact-card">
+          <span class="cc-icon">✉️</span>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:seva@divyashaktidarbar.in">seva@divyashaktidarbar.in</a>
+          </div>
+        </li>
+        <li class="contact-card">
+          <span class="cc-icon">📍</span>
+          <div>
+            <h4>Darbar Pata</h4>
+            <span>Ganga Marg, Varanasi, Uttar Pradesh, Bharat</span>
+          </div>
+        </li>
+        <li class="contact-card">
+          <span class="cc-icon">🕐</span>
+          <div>
+            <h4>Darshan Samay</h4>
+            <span>Prातah 5:30 — Raatri 9:30</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="map-frame" aria-hidden="true">
+        <div class="map-glow"></div>
+        <span class="map-pin">📍</span>
+        <span class="map-label">Divya Shakti Darbar, Bhopla</span>
+      </div>
+    </div>
+
+    <form class="booking-form contact-form" id="contactForm" novalidate>
+      <p class="eyebrow">संदेश भेजें</p>
+      <h2 style="margin-bottom:.6em;">Sandesh Bhejein</h2>
+      <div class="form-row">
+        <div class="field">
+          <label for="cname">Poora Naam</label>
+          <input type="text" id="cname" name="cname" placeholder="Aapka naam" required>
+        </div>
+        <div class="field">
+          <label for="cemail">Email Ya Phone</label>
+          <input type="text" id="cemail" name="cemail" placeholder="Sampark ka madhyam" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="csubject">Vishay</label>
+        <input type="text" id="csubject" name="csubject" placeholder="Sandesh kis baare mein hai">
+      </div>
+      <div class="field">
+        <label for="cmsg">Sandesh</label>
+        <textarea id="cmsg" name="cmsg" rows="4" placeholder="Apna sandesh yahan likhein..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Sandesh Bhejein</button>
+      <p class="form-status" id="contactStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+      <p>Shraddha se juda, seva se sanchalit.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Darbar</h4>
+      <a href="about.html">Parichay</a>
+      <a href="sevayein.html">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <h4>Sampark</h4>
+      <a href="tel:+910000000000">+91 00000 00000</a>
+      <a href="mailto:seva@divyashaktidarbar.in">seva@divyashaktidarbar.in</a>
+      <a href="booking.html">Puja Book Karein</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Divya Shakti Darbar. Sarvadhikar Surakshit.</span>
+    <span class="footer-om">ॐ शांति शांति शांतिः</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Divya Shakti Darbar</title>
+<meta name="description" content="Divya Shakti Darbar ki puja, havan aur aarti anushthanon ki jhalakiyaan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="emberCanvas"></canvas>
+
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">Darbar Ke Baare Mein</a>
+      <a href="sevayein.html">Puja Sevayein</a>
+      <a href="gallery.html" class="active-link">Gallery</a>
+      <a href="contact.html">Sampark</a>
+      <a href="booking.html" class="nav-cta">Puja Book Karein</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu kholein" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="hero-fallback" aria-hidden="true">
+    <div class="flame-field" id="flameField"></div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="page-hero-content">
+    <p class="eyebrow">गैलरी</p>
+    <h1>Anushthan Ki Jhalakiyaan</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Gallery</p>
+  </div>
+</section>
+
+<!-- ============ GALLERY FILTER TABS ============ -->
+<section class="gallery-section">
+  <p class="eyebrow eyebrow-center eyebrow-dark">दृश्य संग्रह</p>
+  <h2 class="section-title" style="color:var(--maroon-deep);">Puja, Havan Aur Aarti Ke Pal</h2>
+  <p class="section-sub">Neeche di gayi jhalakiyaan hamare darbar mein sampann anushthanon ki hain.</p>
+
+  <div class="gallery-tabs" id="galleryTabs">
+    <button class="gallery-tab active" data-filter="all">Sabhi</button>
+    <button class="gallery-tab" data-filter="puja">Puja</button>
+    <button class="gallery-tab" data-filter="havan">Havan</button>
+    <button class="gallery-tab" data-filter="aarti">Aarti</button>
+  </div>
+
+  <div class="gallery-grid" id="galleryGrid">
+    <figure class="gallery-item" data-cat="puja" style="--g1:#4A0E2A; --g2:#8B1E3F;">
+      <span class="gi-icon">🕉️</span>
+      <figcaption>Rudrabhishek Anushthan</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="havan" style="--g1:#6C1B3E; --g2:#E8792C;">
+      <span class="gi-icon">🔥</span>
+      <figcaption>Navgrah Shanti Havan</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="puja" style="--g1:#2C0817; --g2:#C9A227;">
+      <span class="gi-icon">🪔</span>
+      <figcaption>Griha Pravesh Puja</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="aarti" style="--g1:#4A0E2A; --g2:#F0CF6E;">
+      <span class="gi-icon">🔔</span>
+      <figcaption>Sandhya Aarti</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="puja" style="--g1:#8B1E3F; --g2:#E8792C;">
+      <span class="gi-icon">📿</span>
+      <figcaption>Durga Saptashati Path</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="havan" style="--g1:#2C0817; --g2:#6C1B3E;">
+      <span class="gi-icon">🐍</span>
+      <figcaption>Kaal Sarp Dosh Nivaran</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="aarti" style="--g1:#6C1B3E; --g2:#C9A227;">
+      <span class="gi-icon">🌺</span>
+      <figcaption>Maa Lakshmi Aarti</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="puja" style="--g1:#4A0E2A; --g2:#E8792C;">
+      <span class="gi-icon">🙏</span>
+      <figcaption>Sankalp Vidhi</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="havan" style="--g1:#2C0817; --g2:#F0CF6E;">
+      <span class="gi-icon">🪷</span>
+      <figcaption>Purnahuti Samaroh</figcaption>
+    </figure>
+  </div>
+
+  <p class="gallery-note">Note: Yeh gallery abhi placeholder cards dikha rahi hai. Apni khud ki puja/darbar ki photos add karne ke liye, ek image (img tag) ko is card ke andar daalein — design instructions script.js aur style.css mein comment ke roop mein di gayi hain.</p>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Band karein">✕</button>
+  <div class="lightbox-inner" id="lightboxInner">
+    <span class="lb-icon" id="lightboxIcon">🕉️</span>
+    <p id="lightboxCaption"></p>
+  </div>
+</div>
+
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <h2>Apni Puja Ka Anubhav Bhi Aisa Hi Ho</h2>
+    <p>Shraddha aur vidhi ke sangam mein sammilit hon.</p>
+    <a href="booking.html" class="btn btn-primary">Puja Book Karein</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+      <p>Shraddha se juda, seva se sanchalit.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Darbar</h4>
+      <a href="about.html">Parichay</a>
+      <a href="sevayein.html">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <h4>Sampark</h4>
+      <a href="tel:+910000000000">+91 00000 00000</a>
+      <a href="mailto:seva@divyashaktidarbar.in">seva@divyashaktidarbar.in</a>
+      <a href="booking.html">Puja Book Karein</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Divya Shakti Darbar. Sarvadhikar Surakshit.</span>
+    <span class="footer-om">ॐ शांति शांति शांतिः</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

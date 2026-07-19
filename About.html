@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darbar Ke Baare Mein | Divya Shakti Darbar</title>
+<meta name="description" content="Divya Shakti Darbar ka parichay — hamari yatra, mulya aur anubhavi acharya mandal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="emberCanvas"></canvas>
+
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active-link">Darbar Ke Baare Mein</a>
+      <a href="sevayein.html">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Sampark</a>
+      <a href="booking.html" class="nav-cta">Puja Book Karein</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu kholein" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO (no video, quiet flame field) ============ -->
+<section class="page-hero">
+  <div class="hero-fallback" aria-hidden="true">
+    <div class="flame-field" id="flameField"></div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="page-hero-content">
+    <p class="eyebrow">दरबार परिचय</p>
+    <h1>Hamari Kahani, Hamari Shraddha</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Darbar Ke Baare Mein</p>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="about" id="story">
+  <div class="about-wrap">
+    <div class="about-visual">
+      <div class="mandala-ring" aria-hidden="true">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="ring r3"></div>
+        <div class="thali">🪔</div>
+      </div>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow eyebrow-dark">आरंभ से आज तक</p>
+      <h2>Ek Diye Se Shuru Hua Safar</h2>
+      <p>Divya Shakti Darbar ki sthaapna ek chhote se mandir-kaksh se hui thi, jahan mutthi bhar shraddhalu nitya aarti ke liye ikattha hote the. Samay ke saath, vahi diya ek poore darbar mein badal gaya — jahan aaj vedic acharya, shuddh samagri aur shastra-sammat vidhi ke saath, desh-videsh ke shraddhaluon tak puja pahunchti hai.</p>
+      <p>Hamara vishwas hai ki puja sirf ek riwaz nahi, ek sankalp hai — aur har sankalp ko poori nishtha, shuddhata aur samay ki pabandi ke saath nibhaya jaana chahiye.</p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num" data-count="18">0</span><span class="stat-label">Varsh Ki Sadhna</span></div>
+        <div class="stat"><span class="stat-num" data-count="240">0</span><span class="stat-label">Vidhi-Vidhan</span></div>
+        <div class="stat"><span class="stat-num" data-count="52000">0</span><span class="stat-label">Sampann Pujayein</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUES ============ -->
+<section class="sevas" id="values">
+  <p class="eyebrow eyebrow-center">हमारे मूल्य</p>
+  <h2 class="section-title">Jin Sidhanton Par Darbar Chalta Hai</h2>
+  <div class="seva-grid">
+    <article class="seva-card">
+      <div class="seva-icon">🙏</div><h3>Shuddhata</h3>
+      <p>Har samagri, har mantra aur har vidhi shastron ke anusaar, bina kisi samjhauta ke sampann ki jaati hai.</p>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">⏱️</div><h3>Samay Ki Pabandi</h3>
+      <p>Shubh muhurat ka mahatva samajhte hue, har puja tay samay par hi shuru hoti hai.</p>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">📖</div><h3>Gyan Evam Anubhav</h3>
+      <p>Hamare acharya varshon ke adhyayan aur anubhav ke saath vidhi ko sarthak banate hain.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ ACHARYA TEAM ============ -->
+<section class="team" id="acharya">
+  <p class="eyebrow eyebrow-center eyebrow-dark">आचार्य मंडल</p>
+  <h2 class="section-title" style="color:var(--maroon-deep);">Hamare Anubhavi Acharya</h2>
+  <p class="section-sub">Har acharya vishesh vidhi mein pravin hain, aur varshon ki sadhna se yukt hain.</p>
+  <div class="team-grid">
+    <article class="team-card">
+      <div class="team-avatar">🧘‍♂️</div>
+      <h3>Pandit Devendra Shastri</h3>
+      <span class="team-role">Rudrabhishek Visheshagya</span>
+      <p>22 varshon ka anubhav, Kashi se vedic shiksha praapt.</p>
+    </article>
+    <article class="team-card">
+      <div class="team-avatar">🧘‍♂️</div>
+      <h3>Acharya Vinod Trivedi</h3>
+      <span class="team-role">Navgrah Shanti Visheshagya</span>
+      <p>Jyotish evam havan vidhi mein 18 varshon ki sadhna.</p>
+    </article>
+    <article class="team-card">
+      <div class="team-avatar">🧘‍♀️</div>
+      <h3>Vidushi Kamla Joshi</h3>
+      <span class="team-role">Durga Saptashati Path</span>
+      <p>Shakti-upasana mein pravin, 15 varshon ka anubhav.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <h2>Hamare Saath Apni Puja Ka Sankalp Lein</h2>
+    <p>Shraddha aur vidhi ke sangam mein sammilit hon.</p>
+    <a href="booking.html" class="btn btn-primary">Puja Book Karein</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+      <p>Shraddha se juda, seva se sanchalit.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Darbar</h4>
+      <a href="about.html">Parichay</a>
+      <a href="sevayein.html">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <h4>Sampark</h4>
+      <a href="tel:+910000000000">+91 00000 00000</a>
+      <a href="mailto:seva@divyashaktidarbar.in">seva@divyashaktidarbar.in</a>
+      <a href="booking.html">Puja Book Karein</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Divya Shakti Darbar. Sarvadhikar Surakshit.</span>
+    <span class="footer-om">ॐ शांति शांति शांतिः</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

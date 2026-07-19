@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puja Sevayein | Divya Shakti Darbar</title>
+<meta name="description" content="Divya Shakti Darbar ki sabhi puja sevayein — Rudrabhishek, Havan, Griha Pravesh aur adhik. WhatsApp par seedhe sampark karein.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="emberCanvas"></canvas>
+
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">Darbar Ke Baare Mein</a>
+      <a href="sevayein.html" class="active-link">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Sampark</a>
+      <a href="booking.html" class="nav-cta">Puja Book Karein</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu kholein" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="hero-fallback" aria-hidden="true">
+    <div class="flame-field" id="flameField"></div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="page-hero-content">
+    <p class="eyebrow">पूजा सेवाएँ</p>
+    <h1>Hamari Sabhi Puja Sevayein</h1>
+    <p class="breadcrumb"><a href="index.html">Home</a> / Puja Sevayein</p>
+  </div>
+</section>
+
+<!-- ============ WHATSAPP QUICK-CONTACT STRIP ============ -->
+<section class="wa-strip">
+  <div class="wa-strip-inner">
+    <div class="wa-strip-text">
+      <span class="wa-icon">
+        <svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M16.01 3C9.39 3 4 8.39 4 15.01c0 2.32.65 4.48 1.78 6.33L4 29l7.86-1.73a11.9 11.9 0 0 0 4.15.75h.01c6.62 0 12-5.39 12-12.01C28.02 8.39 22.63 3 16.01 3Zm0 21.78c-1.33 0-2.63-.34-3.78-.99l-.27-.15-4.66 1.03 1.06-4.53-.18-.28a9.7 9.7 0 0 1-1.5-5.17c0-5.4 4.4-9.8 9.8-9.8s9.79 4.4 9.79 9.8c0 5.41-4.39 9.79-9.79 9.79Zm5.36-7.33c-.29-.15-1.73-.86-2-.95-.27-.1-.46-.15-.66.14-.2.29-.76.95-.93 1.15-.17.19-.34.22-.63.07-.29-.14-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.5.07-.77.36-.26.29-1 .98-1 2.39s1.03 2.77 1.17 2.96c.15.19 2.03 3.1 4.91 4.35.69.3 1.22.47 1.64.6.69.22 1.32.19 1.81.11.55-.08 1.73-.71 1.98-1.39.24-.68.24-1.27.17-1.39-.07-.12-.26-.19-.55-.34Z"/></svg>
+      </span>
+      <p>Kisi bhi seva ke baare mein confusion hai? Seedhe humse WhatsApp par poochein.</p>
+    </div>
+    <a href="https://wa.me/919999999999?text=Namaste%2C%20mujhe%20puja%20sevaon%20ke%20baare%20mein%20jaankari%20chahiye" target="_blank" rel="noopener" class="btn wa-btn">WhatsApp Par Poochein</a>
+  </div>
+</section>
+
+<!-- ============ FULL SEVA LIST ============ -->
+<section class="sevas" id="sevas">
+  <p class="eyebrow eyebrow-center">सम्पूर्ण सूची</p>
+  <h2 class="section-title">Apni Puja Chunein</h2>
+  <p class="section-sub">Har seva anubhavi purohit dwara, shuddh samagri ke saath sampann karayi jaati hai.</p>
+
+  <div class="seva-grid">
+    <article class="seva-card">
+      <div class="seva-icon">🕉️</div>
+      <h3>Rudrabhishek</h3>
+      <p>Bhagwan Shiv ko jal, dudh aur bilvapatra se abhishek — shanti aur samriddhi ke liye.</p>
+      <span class="seva-dur">Samay: 1.5 ghante</span>
+      <div class="seva-actions">
+        <a href="booking.html" class="seva-link">Book Karein →</a>
+        <a href="https://wa.me/919999999999?text=Namaste%2C%20mujhe%20Rudrabhishek%20ke%20baare%20mein%20jaankari%20chahiye" target="_blank" rel="noopener" class="seva-wa" aria-label="Rudrabhishek ke liye WhatsApp par poochein">💬</a>
+      </div>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🔥</div>
+      <h3>Navgrah Shanti Havan</h3>
+      <p>Nau grahon ki asaman peeda ko shant karne wali vidhi, jeevan mein santulan ke liye.</p>
+      <span class="seva-dur">Samay: 2 ghante</span>
+      <div class="seva-actions">
+        <a href="booking.html" class="seva-link">Book Karein →</a>
+        <a href="https://wa.me/919999999999?text=Namaste%2C%20mujhe%20Navgrah%20Shanti%20Havan%20ke%20baare%20mein%20jaankari%20chahiye" target="_blank" rel="noopener" class="seva-wa" aria-label="Navgrah Shanti Havan ke liye WhatsApp par poochein">💬</a>
+      </div>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🪔</div>
+      <h3>Griha Pravesh Puja</h3>
+      <p>Naye ghar mein prem, samridhi aur suraksha ke sankalp ke saath pravesh vidhi.</p>
+      <span class="seva-dur">Samay: 2.5 ghante</span>
+      <div class="seva-actions">
+        <a href="booking.html" class="seva-link">Book Karein →</a>
+        <a href="https://wa.me/919999999999?text=Namaste%2C%20mujhe%20Griha%20Pravesh%20Puja%20ke%20baare%20mein%20jaankari%20chahiye" target="_blank" rel="noopener" class="seva-wa" aria-label="Griha Pravesh Puja ke liye WhatsApp par poochein">💬</a>
+      </div>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">📿</div>
+      <h3>Durga Saptashati Path</h3>
+      <p>Maa Durga ki stuti mein saat sau shlokon ka anushthan, shakti-jagran ke liye.</p>
+      <span class="seva-dur">Samay: 3 ghante</span>
+      <div class="seva-actions">
+        <a href="booking.html" class="seva-link">Book Karein →</a>
+        <a href="https://wa.me/919999999999?text=Namaste%2C%20mujhe%20Durga%20Saptashati%20Path%20ke%20baare%20mein%20jaankari%20chahiye" target="_blank" rel="noopener" class="seva-wa" aria-label="Durga Saptashati Path ke liye WhatsApp par poochein">💬</a>
+      </div>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🐍</div>
+      <h3>Kaal Sarp Dosh Nivaran</h3>
+      <p>Kundli mein kaal sarp yog ke prabhav ko kam karne ki vishesh puja.</p>
+      <span class="seva-dur">Samay: 2 ghante</span>
+      <div class="seva-actions">
+        <a href="booking.html" class="seva-link">Book Karein →</a>
+        <a href="https://wa.me/919999999999?text=Namaste%2C%20mujhe%20Kaal%20Sarp%20Dosh%20Nivaran%20ke%20baare%20mein%20jaankari%20chahiye" target="_blank" rel="noopener" class="seva-wa" aria-label="Kaal Sarp Dosh Nivaran ke liye WhatsApp par poochein">💬</a>
+      </div>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🌺</div>
+      <h3>Maa Lakshmi Aarti</h3>
+      <p>Dhan, samriddhi aur sthirta ke liye Diwali evam nitya aarti anushthan.</p>
+      <span class="seva-dur">Samay: 45 minute</span>
+      <div class="seva-actions">
+        <a href="booking.html" class="seva-link">Book Karein →</a>
+        <a href="https://wa.me/919999999999?text=Namaste%2C%20mujhe%20Maa%20Lakshmi%20Aarti%20ke%20baare%20mein%20jaankari%20chahiye" target="_blank" rel="noopener" class="seva-wa" aria-label="Maa Lakshmi Aarti ke liye WhatsApp par poochein">💬</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <h2>Apni Seva Tay Nahi Kar Paa Rahe?</h2>
+    <p>Humse WhatsApp par baat karein — hum sahi seva chunne mein madad karenge.</p>
+    <a href="https://wa.me/919999999999?text=Namaste%2C%20mujhe%20sahi%20puja%20seva%20chunne%20mein%20madad%20chahiye" target="_blank" rel="noopener" class="btn wa-btn">WhatsApp Par Baat Karein</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+      <p>Shraddha se juda, seva se sanchalit.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Darbar</h4>
+      <a href="about.html">Parichay</a>
+      <a href="sevayein.html">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <h4>Sampark</h4>
+      <a href="tel:+910000000000">+91 00000 00000</a>
+      <a href="mailto:seva@divyashaktidarbar.in">seva@divyashaktidarbar.in</a>
+      <a href="booking.html">Puja Book Karein</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Divya Shakti Darbar. Sarvadhikar Surakshit.</span>
+    <span class="footer-om">ॐ शांति शांति शांतिः</span>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="https://wa.me/919999999999?text=Namaste%2C%20mujhe%20puja%20sevaon%20ke%20baare%20mein%20jaankari%20chahiye" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp par sampark karein">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M16.01 3C9.39 3 4 8.39 4 15.01c0 2.32.65 4.48 1.78 6.33L4 29l7.86-1.73a11.9 11.9 0 0 0 4.15.75h.01c6.62 0 12-5.39 12-12.01C28.02 8.39 22.63 3 16.01 3Zm0 21.78c-1.33 0-2.63-.34-3.78-.99l-.27-.15-4.66 1.03 1.06-4.53-.18-.28a9.7 9.7 0 0 1-1.5-5.17c0-5.4 4.4-9.8 9.8-9.8s9.79 4.4 9.79 9.8c0 5.41-4.39 9.79-9.79 9.79Zm5.36-7.33c-.29-.15-1.73-.86-2-.95-.27-.1-.46-.15-.66.14-.2.29-.76.95-.93 1.15-.17.19-.34.22-.63.07-.29-.14-1.23-.45-2.34-1.44-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.5.07-.77.36-.26.29-1 .98-1 2.39s1.03 2.77 1.17 2.96c.15.19 2.03 3.1 4.91 4.35.69.3 1.22.47 1.64.6.69.22 1.32.19 1.81.11.55-.08 1.73-.71 1.98-1.39.24-.68.24-1.27.17-1.39-.07-.12-.26-.19-.55-.34Z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

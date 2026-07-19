@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya Shakti Darbar | दिव्य शक्ति दरबार</title>
+<meta name="description" content="Divya Shakti Darbar — Puja, Havan, Rudrabhishek aur Aarti bookings. Shraddha se juda ek pavitra sthaan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="emberCanvas"></canvas>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya Shakti Darbar | दिव्य शक्ति दरबार</title>
+<meta name="description" content="Divya Shakti Darbar — Puja, Havan, Rudrabhishek aur Aarti bookings. Shraddha se juda ek pavitra sthaan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="emberCanvas"></canvas>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="active-link">Home</a>
+      <a href="about.html">Darbar Ke Baare Mein</a>
+      <a href="sevayein.html">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Sampark</a>
+      <a href="booking.html" class="nav-cta">Puja Book Karein</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu kholein" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO with background video ============ -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <video id="heroVideo" autoplay muted loop playsinline poster="">
+      <!-- Replace the src below with your own temple/diya/havan footage -->
+      <source src="https://cdn.coverr.co/videos/coverr-a-diya-lamp-1584/1080p.mp4" type="video/mp4">
+    </video>
+    <div class="hero-fallback" id="heroFallback" aria-hidden="true">
+      <div class="flame-field" id="flameField"></div>
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-vignette"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow">॥ श्रद्धा • शक्ति • संकल्प ॥</p>
+    <h1 class="hero-title">
+      <span class="line">दिव्य शक्ति</span>
+      <span class="line accent">दरबार</span>
+    </h1>
+    <p class="hero-sub">Jahan har diya ek prarthana hai, aur har puja ek sankalp. Ghar baithe shuddh vidhi-vidhan se puja, havan aur abhishek karvayein — anubhavi acharyon ke saath.</p>
+    <div class="hero-actions">
+      <a href="booking.html" class="btn btn-primary">Aaj Ki Puja Book Karein</a>
+      <a href="gallery.html" class="btn btn-ghost">Gallery Dekhein</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <span>Neeche Scroll Karein</span>
+    <div class="cue-line"></div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>ॐ नमः शिवाय</span><span>•</span>
+    <span>श्री गणेशाय नमः</span><span>•</span>
+    <span>जय माता दी</span><span>•</span>
+    <span>हरे कृष्ण हरे राम</span><span>•</span>
+    <span>ॐ नमः शिवाय</span><span>•</span>
+    <span>श्री गणेशाय नमः</span><span>•</span>
+    <span>जय माता दी</span><span>•</span>
+    <span>हरे कृष्ण हरे राम</span><span>•</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT TEASER ============ -->
+<section class="about" id="about">
+  <div class="about-wrap">
+    <div class="about-visual">
+      <div class="mandala-ring" aria-hidden="true">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="ring r3"></div>
+        <div class="thali">🪔</div>
+      </div>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow eyebrow-dark">दरबार परिचय</p>
+      <h2>Ek Darbar, Jahan Aastha Ko Milta Hai Vidhi</h2>
+      <p>Divya Shakti Darbar ek aisa manch hai jahan pramanik vedic acharya, shuddh samagri aur shastra-sammat vidhi ke saath aapke ghar tak puja pahunchti hai — chahe aap kahin bhi ho.</p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num" data-count="18">0</span><span class="stat-label">Varsh Ki Sadhna</span></div>
+        <div class="stat"><span class="stat-num" data-count="240">0</span><span class="stat-label">Vidhi-Vidhan</span></div>
+        <div class="stat"><span class="stat-num" data-count="52000">0</span><span class="stat-label">Sampann Pujayein</span></div>
+      </div>
+      <a href="about.html" class="btn btn-ghost btn-dark" style="margin-top:1.6rem;">Poora Parichay Padhein</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEVAS ============ -->
+<section class="sevas" id="sevas">
+  <p class="eyebrow eyebrow-center">पूजा सेवाएँ</p>
+  <h2 class="section-title">Apni Puja Chunein</h2>
+  <p class="section-sub">Har seva anubhavi purohit dwara, shuddh samagri ke saath sampann karayi jaati hai.</p>
+
+  <div class="seva-grid">
+    <article class="seva-card">
+      <div class="seva-icon">🕉️</div><h3>Rudrabhishek</h3>
+      <p>Bhagwan Shiv ko jal, dudh aur bilvapatra se abhishek — shanti aur samriddhi ke liye.</p>
+      <span class="seva-dur">Samay: 1.5 ghante</span>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🔥</div><h3>Navgrah Shanti Havan</h3>
+      <p>Nau grahon ki asaman peeda ko shant karne wali vidhi, jeevan mein santulan ke liye.</p>
+      <span class="seva-dur">Samay: 2 ghante</span>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🪔</div><h3>Griha Pravesh Puja</h3>
+      <p>Naye ghar mein prem, samridhi aur suraksha ke sankalp ke saath pravesh vidhi.</p>
+      <span class="seva-dur">Samay: 2.5 ghante</span>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">📿</div><h3>Durga Saptashati Path</h3>
+      <p>Maa Durga ki stuti mein saat sau shlokon ka anushthan, shakti-jagran ke liye.</p>
+      <span class="seva-dur">Samay: 3 ghante</span>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🐍</div><h3>Kaal Sarp Dosh Nivaran</h3>
+      <p>Kundli mein kaal sarp yog ke prabhav ko kam karne ki vishesh puja.</p>
+      <span class="seva-dur">Samay: 2 ghante</span>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🌺</div><h3>Maa Lakshmi Aarti</h3>
+      <p>Dhan, samriddhi aur sthirta ke liye Diwali evam nitya aarti anushthan.</p>
+      <span class="seva-dur">Samay: 45 minute</span>
+    </article>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a href="sevayein.html" class="btn btn-ghost">Sabhi Sevayein Dekhein</a>
+    <a href="booking.html" class="btn btn-primary">Seva Book Karein</a>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="anubhav" id="anubhav">
+  <p class="eyebrow eyebrow-center">भक्तों के अनुभव</p>
+  <h2 class="section-title">Shraddhaluon Ke Vachan</h2>
+  <div class="anubhav-track" id="anubhavTrack">
+    <blockquote class="anubhav-card">
+      <p>“Rudrabhishek itni shraddha aur shuddhata se hua, laga jaise sakshaat mandir mein baithe hon.”</p>
+      <cite>— Meenal Sharma, Lucknow</cite>
+    </blockquote>
+    <blockquote class="anubhav-card">
+      <p>“Griha Pravesh ki vidhi bahut vistaar se aur samay par sampann hui. Sukoon mila.”</p>
+      <cite>— Rakesh Verma, Bhopal</cite>
+    </blockquote>
+    <blockquote class="anubhav-card">
+      <p>“Navgrah Havan ke baad jeevan mein sach mein shanti mehsoos hui. Dhanyavaad Darbar.”</p>
+      <cite>— Sunita Pandey, Patna</cite>
+    </blockquote>
+    <blockquote class="anubhav-card">
+      <p>“Purohit ji ka gyan aur vidhi dono hi bahut praman-sammat the.”</p>
+      <cite>— Arvind Tiwari, Varanasi</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <h2>Apni Puja Ka Sankalp Aaj Hi Lein</h2>
+    <p>Shubh muhurat, shuddh vidhi aur anubhavi acharya — sab kuch ek jagah.</p>
+    <a href="booking.html" class="btn btn-primary">Booking Page Par Jaayein</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+      <p>Shraddha se juda, seva se sanchalit.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Darbar</h4>
+      <a href="about.html">Parichay</a>
+      <a href="sevayein.html">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <h4>Sampark</h4>
+      <a href="tel:+910000000000">+91 00000 00000</a>
+      <a href="mailto:seva@divyashaktidarbar.in">seva@divyashaktidarbar.in</a>
+      <a href="booking.html">Puja Book Karein</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Divya Shakti Darbar. Sarvadhikar Surakshit.</span>
+    <span class="footer-om">ॐ शांति शांति शांतिः</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="active-link">Home</a>
+      <a href="about.html">Darbar Ke Baare Mein</a>
+      <a href="index.html#sevas">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Sampark</a>
+      <a href="booking.html" class="nav-cta">Puja Book Karein</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu kholein" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO with background video ============ -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <video id="heroVideo" autoplay muted loop playsinline poster="">
+      <!-- Replace the src below with your own temple/diya/havan footage -->
+      <source src="https://cdn.coverr.co/videos/coverr-a-diya-lamp-1584/1080p.mp4" type="video/mp4">
+    </video>
+    <div class="hero-fallback" id="heroFallback" aria-hidden="true">
+      <div class="flame-field" id="flameField"></div>
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-vignette"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow">॥ श्रद्धा • शक्ति • संकल्प ॥</p>
+    <h1 class="hero-title">
+      <span class="line">दिव्य शक्ति</span>
+      <span class="line accent">दरबार</span>
+    </h1>
+    <p class="hero-sub">Jahan har diya ek prarthana hai, aur har puja ek sankalp. Ghar baithe shuddh vidhi-vidhan se puja, havan aur abhishek karvayein — anubhavi acharyon ke saath.</p>
+    <div class="hero-actions">
+      <a href="booking.html" class="btn btn-primary">Aaj Ki Puja Book Karein</a>
+      <a href="gallery.html" class="btn btn-ghost">Gallery Dekhein</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <span>Neeche Scroll Karein</span>
+    <div class="cue-line"></div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>ॐ नमः शिवाय</span><span>•</span>
+    <span>श्री गणेशाय नमः</span><span>•</span>
+    <span>जय माता दी</span><span>•</span>
+    <span>हरे कृष्ण हरे राम</span><span>•</span>
+    <span>ॐ नमः शिवाय</span><span>•</span>
+    <span>श्री गणेशाय नमः</span><span>•</span>
+    <span>जय माता दी</span><span>•</span>
+    <span>हरे कृष्ण हरे राम</span><span>•</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT TEASER ============ -->
+<section class="about" id="about">
+  <div class="about-wrap">
+    <div class="about-visual">
+      <div class="mandala-ring" aria-hidden="true">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="ring r3"></div>
+        <div class="thali">🪔</div>
+      </div>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow eyebrow-dark">दरबार परिचय</p>
+      <h2>Ek Darbar, Jahan Aastha Ko Milta Hai Vidhi</h2>
+      <p>Divya Shakti Darbar ek aisa manch hai jahan pramanik vedic acharya, shuddh samagri aur shastra-sammat vidhi ke saath aapke ghar tak puja pahunchti hai — chahe aap kahin bhi ho.</p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num" data-count="18">0</span><span class="stat-label">Varsh Ki Sadhna</span></div>
+        <div class="stat"><span class="stat-num" data-count="240">0</span><span class="stat-label">Vidhi-Vidhan</span></div>
+        <div class="stat"><span class="stat-num" data-count="52000">0</span><span class="stat-label">Sampann Pujayein</span></div>
+      </div>
+      <a href="about.html" class="btn btn-ghost btn-dark" style="margin-top:1.6rem;">Poora Parichay Padhein</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEVAS ============ -->
+<section class="sevas" id="sevas">
+  <p class="eyebrow eyebrow-center">पूजा सेवाएँ</p>
+  <h2 class="section-title">Apni Puja Chunein</h2>
+  <p class="section-sub">Har seva anubhavi purohit dwara, shuddh samagri ke saath sampann karayi jaati hai.</p>
+
+  <div class="seva-grid">
+    <article class="seva-card">
+      <div class="seva-icon">🕉️</div><h3>Rudrabhishek</h3>
+      <p>Bhagwan Shiv ko jal, dudh aur bilvapatra se abhishek — shanti aur samriddhi ke liye.</p>
+      <span class="seva-dur">Samay: 1.5 ghante</span>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🔥</div><h3>Navgrah Shanti Havan</h3>
+      <p>Nau grahon ki asaman peeda ko shant karne wali vidhi, jeevan mein santulan ke liye.</p>
+      <span class="seva-dur">Samay: 2 ghante</span>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🪔</div><h3>Griha Pravesh Puja</h3>
+      <p>Naye ghar mein prem, samridhi aur suraksha ke sankalp ke saath pravesh vidhi.</p>
+      <span class="seva-dur">Samay: 2.5 ghante</span>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">📿</div><h3>Durga Saptashati Path</h3>
+      <p>Maa Durga ki stuti mein saat sau shlokon ka anushthan, shakti-jagran ke liye.</p>
+      <span class="seva-dur">Samay: 3 ghante</span>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🐍</div><h3>Kaal Sarp Dosh Nivaran</h3>
+      <p>Kundli mein kaal sarp yog ke prabhav ko kam karne ki vishesh puja.</p>
+      <span class="seva-dur">Samay: 2 ghante</span>
+    </article>
+    <article class="seva-card">
+      <div class="seva-icon">🌺</div><h3>Maa Lakshmi Aarti</h3>
+      <p>Dhan, samriddhi aur sthirta ke liye Diwali evam nitya aarti anushthan.</p>
+      <span class="seva-dur">Samay: 45 minute</span>
+    </article>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem;">
+    <a href="booking.html" class="btn btn-primary">Seva Book Karein</a>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="anubhav" id="anubhav">
+  <p class="eyebrow eyebrow-center">भक्तों के अनुभव</p>
+  <h2 class="section-title">Shraddhaluon Ke Vachan</h2>
+  <div class="anubhav-track" id="anubhavTrack">
+    <blockquote class="anubhav-card">
+      <p>“Rudrabhishek itni shraddha aur shuddhata se hua, laga jaise sakshaat mandir mein baithe hon.”</p>
+      <cite>— Meenal Sharma, Lucknow</cite>
+    </blockquote>
+    <blockquote class="anubhav-card">
+      <p>“Griha Pravesh ki vidhi bahut vistaar se aur samay par sampann hui. Sukoon mila.”</p>
+      <cite>— Rakesh Verma, Bhopal</cite>
+    </blockquote>
+    <blockquote class="anubhav-card">
+      <p>“Navgrah Havan ke baad jeevan mein sach mein shanti mehsoos hui. Dhanyavaad Darbar.”</p>
+      <cite>— Sunita Pandey, Patna</cite>
+    </blockquote>
+    <blockquote class="anubhav-card">
+      <p>“Purohit ji ka gyan aur vidhi dono hi bahut praman-sammat the.”</p>
+      <cite>— Arvind Tiwari, Varanasi</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-banner">
+  <div class="cta-banner-inner">
+    <h2>Apni Puja Ka Sankalp Aaj Hi Lein</h2>
+    <p>Shubh muhurat, shuddh vidhi aur anubhavi acharya — sab kuch ek jagah.</p>
+    <a href="booking.html" class="btn btn-primary">Booking Page Par Jaayein</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <span class="brand-om">ॐ</span>
+      <span class="brand-text">Divya Shakti <em>Darbar</em></span>
+      <p>Shraddha se juda, seva se sanchalit.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Darbar</h4>
+      <a href="about.html">Parichay</a>
+      <a href="index.html#sevas">Puja Sevayein</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <h4>Sampark</h4>
+      <a href="tel:+910000000000">+91 9243547807</a>
+      <a href="mailto:seva@divyashaktidarbar.in">seva@divyashaktidarbar.in</a>
+      <a href="booking.html">Puja Book Karein</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Divya Shakti Darbar. Sarvadhikar Surakshit.</span>
+    <span class="footer-om">ॐ शांति शांति शांतिः</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
