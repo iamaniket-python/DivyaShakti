@@ -143,6 +143,9 @@ ul{list-style:none;margin:0;padding:0;}
 
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px;}
 .hamburger span{width:24px;height:2px;background:var(--ivory);border-radius:2px;transition:all .3s var(--ease);}
+.hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hamburger.active span:nth-child(2){opacity:0;}
+.hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
 /* =========================================================
    HERO — video background
