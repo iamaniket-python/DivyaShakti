@@ -845,3 +845,23 @@ ul{list-style:none;margin:0;padding:0;}
   object-position: center 20%;  /* top se thoda neeche — face zyada tar yahin hota hai */
   display: block;
 }
+.thali {
+  font-size: 3.2rem;
+  filter: drop-shadow(0 0 20px rgba(232,121,44,.5));
+  animation: flicker 3.4s ease-in-out infinite;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--gold-bright);
+}
+
+.thali-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
