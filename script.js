@@ -218,15 +218,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const lightbox = document.getElementById('lightbox');
-    const lightboxIcon = document.getElementById('lightboxIcon');
+    const lightboxImg = document.getElementById('lightboxImg');
     const lightboxCaption = document.getElementById('lightboxCaption');
     const lightboxClose = document.getElementById('lightboxClose');
 
     galleryItems.forEach(item => {
       item.addEventListener('click', () => {
-        const icon = item.querySelector('.gi-icon')?.textContent || '🕉️';
+        const imgSrc = item.dataset.img || item.querySelector('img')?.getAttribute('src');
         const caption = item.querySelector('figcaption')?.textContent || '';
-        lightboxIcon.textContent = icon;
+        if (lightboxImg && imgSrc) {
+          lightboxImg.src = imgSrc;
+          lightboxImg.alt = caption;
+        }
         lightboxCaption.textContent = caption;
         lightbox.classList.add('open');
         lightbox.setAttribute('aria-hidden', 'false');
@@ -236,6 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeLightbox = () => {
       lightbox.classList.remove('open');
       lightbox.setAttribute('aria-hidden', 'true');
+      if (lightboxImg) lightboxImg.src = '';
     };
     lightboxClose?.addEventListener('click', closeLightbox);
     lightbox?.addEventListener('click', (e) => {
