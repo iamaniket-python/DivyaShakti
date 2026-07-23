@@ -221,7 +221,7 @@ ul{list-style:none;margin:0;padding:0;}
 .hero-title{font-size:clamp(2.8rem, 7vw, 5rem);line-height:1.08;margin-bottom:.5em;}
 .hero-title .line{display:block;text-shadow:0 4px 30px rgba(0,0,0,.5);}
 .hero-title .accent{color:var(--gold-bright);}
-.hero-sub{font-size:1.3rem;color:var(--ivory-dim);max-width:600px;margin:0 auto 2em;}
+.hero-sub{font-size:1.3rem;color:var(--maroon-deep);max-width:600px;margin:0 auto 2em;}
 .hero-actions{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;}
 
 .hero-scroll-cue{
