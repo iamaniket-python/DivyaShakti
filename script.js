@@ -131,8 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.y < -20) Object.assign(e, makeEmber());
 
       const grad = ctx.createRadialGradient(e.x, e.y, 0, e.x, e.y, e.r * 4);
-      grad.addColorStop(0, `rgba(240,207,110,${0.55 * e.alpha})`);
-      grad.addColorStop(1, 'rgba(240,207,110,0)');
+      grad.addColorStop(0, `rgba(255,217,102,${0.55 * e.alpha})`);
+      grad.addColorStop(1, 'rgba(255,217,102,0)');
       ctx.fillStyle = grad;
       ctx.beginPath();
       ctx.arc(e.x, e.y, e.r * 4, 0, Math.PI * 2);
